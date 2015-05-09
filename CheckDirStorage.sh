@@ -4,7 +4,7 @@ currDir=$(pwd)
 totalSize=0
 numFiles=$(ls | wc -l)
 
-#File system block size = 512 bytes per POSIX standards
+#File system block size = 1024 bytes per -k flag in du
 BLOCK_SIZE=1024
 currentFileNumber=0
 totalDirSize=0

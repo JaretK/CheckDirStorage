@@ -38,6 +38,12 @@ for dir in *; do
 	fi
 
 	echo -n "Checking "
+	if[[ -d "$dir" ]];then
+		echo -n "D "
+	else
+		echo -n "F "
+	fi
+	
 	echo -n ${bold}$dir${normal}": "
 	echo -n ${bold}"Size = "${normal}
 

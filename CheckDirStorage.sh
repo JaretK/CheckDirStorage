@@ -38,7 +38,8 @@ for dir in *; do
 	fi
 
 	echo -n "Checking "
-	if[[ -d "$dir" ]];then
+	if [[ -d "$dir" ]]; 
+	then
 		echo -n "D "
 	else
 		echo -n "F "
